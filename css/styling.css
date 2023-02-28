@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+/* Pallete
+ff9f1c  orange
+ffbf69  gul
+ffffff  vit
+cbf3f0  ljusblå / 
+2ec4b6  turquise
+
+0081a7  blå
+00afb9  ljusare blå
+fdfcdc  äggskal
+fed9b7  grisröd
+f07167  konstig röd
+*/
+body {
+    width: 100vw;
+    min-height: 100vh; 
+    background: #ffffff;
+    background: -webkit-linear-gradient(180deg, #ffffff 0%, #ff9f1c 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ff9f1c 100%);
+}
+
+#form {
+    padding: 2rem;
+    text-align: center;
+    margin: 0.5rem 5rem;
+}
+
+#form input {
+    padding: .2rem;
+    background-color: #ffbf69;
+}
+#form select{
+    padding: .2rem;
+    background-color: #ffbf69;
+}
+#form button{
+    padding: .2rem;
+    background-color:#ffbf69;;
+    border: .2rem solid #ff9f1c;
+    border-radius: 2rem;
+}
+#form button:hover{
+    background-color: #ff9f1c;
+}
+
+#containerForTamagotchi {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.tamagotchiContainer {
+    width: 15rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin: .5rem;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: .5px solid black;
+    border-radius: 60% 60% 60% 60% / 70% 70% 40% 40%;
+}
+
+.Moose {
+    background:
+        radial-gradient(120px at 100% 0, #f07167 6.25%, #fdfcdc 6.3% 18.75%, #f07167 18.8% 31.25%, #fdfcdc 31.3% 43.75%, #f07167 43.8% 56.25%, #fdfcdc 56.3% 68.75%, #0000 0),
+        radial-gradient(120px at 0 0, #f07167 6.25%, #fdfcdc 6.3% 18.75%, #f07167 18.8% 31.25%, #fdfcdc 31.3% 43.75%, #f07167 43.8% 56.25%, #fdfcdc 56.3% 68.75%, #0000 0),
+        radial-gradient(120px at 0 100%, #f07167 6.25%, #fdfcdc 6.3% 18.75%, #f07167 18.8% 31.25%, #fdfcdc 31.3% 43.75%, #f07167 43.8% 56.25%, #fdfcdc 56.3% 68.75%, #0000 0),
+        radial-gradient(120px at 100% 100%, #f07167 6.25%, #fdfcdc 6.3% 18.75%, #f07167 18.8% 31.25%, #fdfcdc 31.3% 43.75%, #f07167 43.8% 56.25%, #fdfcdc 56.3% 68.75%, #0000 0) #f07167;
+    background-size: 120px 120px;
+    background-color: #f07167;
+}
+
+.Wolf {
+    background: linear-gradient(45deg, #0000 calc(25%/3), #fdfcdc 0 calc(50%/3),
+            #0000 0 calc(250%/3), #fdfcdc 0 calc(275%/3),
+            #0000 0), linear-gradient(45deg, #fdfcdc calc(25%/3), #0000 0 calc(50%/3),
+            #fdfcdc 0 25%, #0000 0 75%,
+            #fdfcdc 0 calc(250%/3), #0000 0 calc(275%/3),
+            #fdfcdc 0),
+        linear-gradient(-45deg, #0000 calc(25%/3), #fdfcdc 0 calc(50%/3),
+            #0000 0 calc(250%/3), #fdfcdc 0 calc(275%/3),
+            #0000 0), linear-gradient(-45deg, #fdfcdc calc(25%/3), #0000 0 calc(50%/3),
+            #fdfcdc 0 25%, #0000 0 75%,
+            #fdfcdc 0 calc(250%/3), #0000 0 calc(275%/3),
+            #fdfcdc 0) #f07167;
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+
+}
+
+.borderGradient {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    padding: .4rem;
+    background: linear-gradient(45deg, #fe6e6c, #cf635c);
+    border-radius: .8rem;
+    border: .5px solid black;
+}
+
+.screenContainer {
+    background: #fed9b7;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 9rem;
+    padding: .5rem;
+    border-radius: .8rem;
+    box-shadow: inset 2px 2px 3px #363535,
+        inset -2px -2px 3px #4e4d4d;
+}
+
+.animalIcon {
+    width: 2rem;
+    padding: .2rem;
+}
+
+.faceIcon {
+    width: 2.5rem;
+    padding: .2rem;
+}
+
+.screenContainer h1 {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.screenContainer h2 {
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    margin: .4rem;
+}
+
+.statusContainer {
+    margin: .5rem;
+    padding: .35rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border: .1rem dashed black;
+}
+
+.statusContainer img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.statusContainer h2 {
+    font-size: 1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #fed9b7;
+    border: 2px solid black;
+    border-radius: .5rem;
+}
+
+.buttonContainer button:hover {
+    background-color: #fecc9c;
+    border-radius: .5rem;
+}
+
+.playBtn {
+    background: url('../images/icons8-heart-with-pulse-50.png') no-repeat;
+    background-size: contain;
+    height: 2rem;
+    width: 2rem;
+    margin: .5rem;
+}
+
+.feedBtnApple {
+    background: url('../images/icons8-apple-50.png') no-repeat;
+    background-size: contain;
+    height: 2rem;
+    width: 2rem;
+    margin: .5rem;
+}
+
+.feedBtnLamb {
+    background: url('../images/icons8-rack-of-lamb-50.png') no-repeat;
+    background-size: contain;
+    height: 2rem;
+    width: 2rem;
+    margin: .5rem;
+}
